@@ -267,7 +267,7 @@ Prendiamo il nostro Bot che stiamo utilizzando, e cerchiamo nelle impostazioni, 
 Compiliamola con i nostri dati!
 ```sh
 Use proxy for this account ? <- Acceso!
-Indirizzo proxy: 213.82.xxx.xxx
+Indirizzo proxy: 213.82.xxx.xxx   (oppure in caso di DDNS: mionomeutente.noip.org / il vostro hostname ottenuto)
 Porta proxy: 1080
 Username: proxymatteo
 Password: passwordproxy
