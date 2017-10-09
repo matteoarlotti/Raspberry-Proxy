@@ -45,3 +45,27 @@ shutdown now
 e attendiamo che il nostro Raspberry si spenga, siamo pronti per collegarlo vicino al router e non toccarlo mai più :)
 
 # Collegamento Raspberry al router
+Grazie alle porte USB presenti nel retro del nostro router possiamo alimentare in modo automatico la nostra board senza dover ricorrere ad altri alimentatori, in caso di assenza invece possiamo utilizzare quello di un vecchio smartphone. Colleghiamo anche il nostro cavo di rete ad una porta libera sul router e lasciamo che il tutto si avvii come in precedenza.
+Nel frattempo apriamo l'app FING per scoprire quale indirizzo interno è stato assegnato al nostro Raspberry. Avviamo la scansione di rete attraverso l'icona in alto a destra e cerchiamo nella lista dei risultati l'immagine di un lampone, con nome raspberrypi. L'IP restituito sarà quello che utilizzeremo per amministrare la nostra board.
+
+# Ricapitolando #1
+- Abbiamo tutto l'occorrente
+- Abbiamo attivato la gestione remota via SSH del Raspberry 
+- Abbiamo messo in rete il nostro mini computer
+Siamo pronti per proseguire!
+
+# Login Remoto con MAC
+Se lavoriamo su MAC possiamo avvalerci dell'app pre-installata Terminale.
+Una volta avviata scriveremo questa riga 
+```sh
+ssh pi@<IP della scheda ottenuto con Fing>
+```
+esempio: ssh pi@192.168.1.148. Dando invio ci chiederà la password, la stessa di prima: "raspberry"
+
+# Login Remoto con Windows
+Avviamo Putty, una applicazione che ci permette di instaurare connessioni SSH.
+In Hostname inseriamo l'IP della nostra scheda (esempio: 192.168.1.148) che ci ha dato prima Fing e diamo Invio. Quando ce lo chiede, logghiamoci con le credenziali di default. 
+```sh
+login as: pi
+password: raspberry
+```
