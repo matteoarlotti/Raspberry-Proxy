@@ -201,7 +201,12 @@ Is the information correct? [Y/n] Y     <--- Y e INVIO PER CONFERMARE
 Nei prossimi step, capiremo come rendere il nostro proxy raggiungibile dalla rete esterna! ...e qui servirà un po' di auto gestione :)
 
 # Gestione del router
-In questi ultimi step, dovremo configurare il nostro router per accettare connessioni verso il nostro proxy. Come sapete (e se non lo sapete è il momento di impararlo), il nostro router agisce da "muro" con la rete esterna. Permette a noi dall'interno di navigare verso l'esterno, ma non accetta che l'esterno possa entrare nella nostra rete, se non opportunamente configurato. Noi dovremo dire al nostro router di accettare le connessioni che arrivano sulla porta 1080 e rigirarle verso il nostro Raspberry, così da essere interpretate dal proxy. I router vengono protetti da password di amministrazione, che generalmente (se non cambiate privatamente) sono quelle di default. Ora vi allego le password standard per alcuni modelli, ma potrebbe essere richiesta qualche ricerca in rete per trovare la vostra specifica. Ovviamente potrebbero non funzionare, cercate in rete il modello del vostro router, seguito da "default password", esempio "TPLINK wa850re default password".
+In questi ultimi step, dovremo configurare il nostro router per accettare connessioni verso il nostro proxy. Come sapete (e se non lo sapete è il momento di impararlo), il nostro router agisce da "muro" con la rete esterna. Permette a noi dall'interno di navigare verso l'esterno, ma non accetta che l'esterno possa entrare nella nostra rete, se non opportunamente configurato. Noi dovremo dire al nostro router di accettare le connessioni che arrivano sulla porta 1080 e rigirarle verso il nostro Raspberry, così da essere interpretate dal proxy.
+
+Apriamo nuovamente FING, e cerchiamo nella lista degli oggetti in rete, due freccie che guardando verso destra si incrociano. Quello sarà il nostro router, e potrebbe avere indirizzi tipo 192.168.1.1, 192.168.1.254, 192.168.0.1, 192.168.0.254.
+Apriamo una finestra del browser internet, e digitiamo l'indirizzo, ci troveremo davanti una finestra di login, per poter gestire il nostro modem.
+
+I router vengono protetti da password di amministrazione, che generalmente (se non cambiate privatamente) sono quelle di default. Ora vi allego le password standard per alcuni modelli, ma potrebbe essere richiesta qualche ricerca per trovare la vostra specifica. In caso di non funzionamento, cercate in rete il modello del vostro router, seguito da "default password", esempio "TPLINK wa850re default password".
 ```sh
 TPLINK
 user: admin
