@@ -180,10 +180,10 @@ Adding new group `proxymatteo' (1002) ...
 Adding new user `proxymatteo' (1002) with group `proxymatteo' ...
 Creating home directory `/home/proxygiuseppe' ...
 Copying files from `/etc/skel' ...
-Enter new UNIX password:    <--- DIGITIAMO LA NOSTRA PASSWORD
-Retype new UNIX password:    <--- DIGITIAMO LA NOSTRA PASSWORD
+Enter new UNIX password:    <--- SCEGLIAMO E DIGITIAMO LA NOSTRA PASSWORD
+Retype new UNIX password:    <--- DIGITIAMO NUOVAMENTE LA PASSWORD
 passwd: password updated successfully
-Changing the user information for proxygiuseppe
+Changing the user information for proxymatteo
 Enter the new value, or press ENTER for the default
         Full Name []:     <--- DIAMO INVIO SENZA SCRIVERE NULLA
         Room Number []:     <--- DIAMO INVIO SENZA SCRIVERE NULLA
