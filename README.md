@@ -235,3 +235,26 @@ user: vodafone
 password: (dovrebbe essere preimpostato)
 
 ```
+
+Siamo dentro, nel cervellone della nostra rete domestica, aguzziamo la vista e andiamo alla ricerca di una voce chiamata: PORT FORWARDING, solitamente lo troviamo sotto NAT/Advanced Settings. Al suo interno potremo inserire una serie di "regole" per instradare il nostro traffico esterno. 
+
+Dovremo procedere in questo modo, ovvero quello di inviare tutto il traffico (se richiesto: sia TCP che UDP) verso la porta 1080 dell'ip del nostro Raspberry. Esempi
+```sh
+Rule Index : 1
+Application : Proxy Raspberry
+Protocol : ALL
+Start Port Number : 1080
+End Port Number : 1080
+Local IP Address : 192.168.1.104 <- IP del vostro Raspberry
+```
+oppure
+```sh
+Service Name    Proxy Raspberry
+Service Type	TCP/UDP
+External Starting Port  1080
+External Ending Port	1080
+Use the same port range for Internal port <- YES
+Internal IP Address	192 . 168 . 0 . 104 <- IP del vostro Raspberry
+```
+
+
