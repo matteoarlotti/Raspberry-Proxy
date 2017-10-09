@@ -256,5 +256,22 @@ External Ending Port	1080
 Use the same port range for Internal port <- YES
 Internal IP Address	192 . 168 . 0 . 104 <- IP del vostro Raspberry
 ```
+Creata la regola, salviamo e applichiamo le modifiche. 
 
+Un altro step da effettuare, è quello di rendere il nostro IP statico. Se siamo clienti Fibra, gli IP sono solitamente statici, altrimenti, se siamo in ADSL potrebbe essere necessario uno step aggiuntivo. Cerchiamo all'interno del nostro router la voce DDNS (o anche Dynamic DNS). Seguiamo le istruzioni che il nostro router ci da, e portiamole a termine.
 
+Questa operazione è necessaria perchè, per via dell'indirizzo IP di casa dinamico, saremo soggetti ad una variazione (su base bi-giornaliera o settimanale). Se inseriamo il nostro IP nel BOT di Instagram e successivamente questo cambia, il nostro Bot interromperà le azioni. Se invece siamo sicuri di avere un indirizzo IP statico (vedi Fastweb o Vodafone), potremmo tranquillamente inserire l'ip nelle configurazioni del proxy.
+
+# Configuriamo il BOT
+Prendiamo il nostro Bot che stiamo utilizzando, e cerchiamo nelle impostazioni, l'area relativa al server Proxy
+Compiliamola con i nostri dati!
+```sh
+Use proxy for this account ? <- Acceso!
+Indirizzo proxy: 213.82.xxx.xxx
+Porta proxy: 1080
+Username: proxymatteo
+Password: passwordproxy
+```
+Prima di dare il salvataggio, verifichiamo che le impostazioni siano salvate correttamente con un test del proxy, solitamente vicino alla configurazione.
+
+Cari amici. Abbiamo finito! Godetevi il vostro Proxy privato e senza canoni! :) 
