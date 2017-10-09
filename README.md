@@ -169,9 +169,9 @@ The document has moved
 * Curl_http_done: called premature == 0
 * Connection #0 to host www.google.com left intact
 ```
-Aggiungiamo ora un utente per il nostro proxy, in quanto uscire con le password di amministrazione non è mai bello!
+Aggiungiamo ora un utente per il nostro proxy, in quanto uscire con le password di amministrazione non è mai bello! Digitiamo:
 ```sh
-adduser <nomedeltuoutente>
+adduser proxymatteo
 ```
 usiamo solo lettere minuscole per il nome, e seguiamo le domande che ci vengono poste:
 ```sh
