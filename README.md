@@ -69,3 +69,10 @@ In Hostname inseriamo l'IP della nostra scheda (esempio: 192.168.1.148) che ci h
 login as: pi
 password: raspberry
 ```
+# Installazione moduli
+Iniziamo subito ad installare i moduli necessari, andremo a caricare un software che opererà come Server SOCKS5 e accetterà connessioni in ingresso per poi completarle attraverso la nostra linea domestica, in questo modo, tutti i bot che operano con instagram, crederanno che il traffico da loro creato viene fatto dallo stesso ip della vostra abitazione.
+Digitiamo il seguente comando
+```sh
+sudo apt-get install dante-server
+```
+quando ci chiederà conferma, sclicchiamo il tasto Y della nostra tastiera per far procedere l'installazione
